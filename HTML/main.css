@@ -34,6 +34,7 @@ body {
 
 .items {
     font-size: large;
+    margin: 0 60px;
 }
 
 input {
@@ -44,9 +45,8 @@ input {
 }
 
 .name_container {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    margin: 0 -20px;
 }
 
 .name {
@@ -70,20 +70,18 @@ input {
 }
 
 input[type=submit] {
-    background-color: lightseagreen;
+    background-color:lightseagreen;
     border: none;
     color: white;
     cursor: pointer;
-    text-align: justify;
-
 }
 
 input[type=submit]:hover {
-    background-color: rgb(0, 102, 255);
+    background-color: darkcyan;
 }
 
 .bottom {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 a {
@@ -91,12 +89,15 @@ a {
     color: rgb(0, 119, 255)
 }
 
-.promo {
-    background-color: white;
-}
+@media only screen and (max-width: 992px) {
+        width: 100%;
+    }
 
-.promo:hover {
-  background-color: skyblue;   
-}
+@media only screen and (min-width: 768px) {
+        width: 70%;
+        
+    }
 
-/* @media screen */
+@media only screen and (max-width: 600px) {
+
+}
