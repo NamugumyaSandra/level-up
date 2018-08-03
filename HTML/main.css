@@ -1,0 +1,102 @@
+body {
+    display: block;
+    background-color:white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+}
+.top {
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    width: 60px;
+    height: 25px;    
+    background-color: black;
+    color: gray;
+    padding: 20px 60px 40px 10px;
+    font-size: 40px;
+    margin: 0px auto;
+}
+
+.heading_1 {
+    font-size: xx-large;  
+    margin-top: auto;
+} 
+
+.items {
+    font-size: large;
+}
+
+input {
+    width: 100%;
+    margin: 10px 25px 25px 0px;
+    padding: 15px 30px;
+    font-size: large;
+}
+
+.name_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    flex: 1;
+    padding: 0px 20px;
+}
+.name:first-child {
+    margin-right: 40px;
+}
+
+.phone_container {
+    width: 100%;
+    display: flex;
+}
+.phone:first-child {
+    flex: 0;
+}
+
+.phone:last-child {
+    flex: 3;
+}
+
+input[type=submit] {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: justify;
+
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 102, 255);
+}
+
+.bottom {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 119, 255)
+}
+
+.promo {
+    background-color: white;
+}
+
+.promo:hover {
+  background-color: skyblue;   
+}
+
+/* @media screen */
