@@ -1,6 +1,8 @@
 
 
-
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: block;
@@ -18,20 +20,18 @@ body {
     padding: 80px 60px;
 }
 .top {
-    margin: auto;
     text-align: center;
 }
 
 .logo {
-    width: 50px;
-    height: 20px;    
+    width: 80px;   
     background-color: black;
     color: white;
-    padding: 30px 30px 40px 10px;
+    padding: 30px 30px 30px 10px;
     font-size: 20px;
     margin: 0px auto;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .heading_1 {
@@ -45,7 +45,7 @@ h1 {
 
 .items {
     font-size: small;
-    margin: 0 60px;
+    margin: 0 -30px;
 }
 
 input {
@@ -65,7 +65,7 @@ input {
     padding: 0px 20px;
 }
 .name:first-child {
-    margin-right: 40px;
+    margin-right: -30px;
 }
 
 .phone_container {
@@ -103,23 +103,44 @@ input[type=submit]:hover {
 
 a {
     text-decoration: none;
-    color: rgb(0, 119, 255)
+    color: rgb(0, 119, 255);
 }
 
 .bottom > p {
     font-size: 12px;
 }
 
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width:860px) {
+    .content {
         width: 100%;
     }
-
-@media only screen and (min-width: 768px) {
-        width: 70%;
-        
+    .items {
+        margin: 0 30px;
+    } 
+    .name_container {
+        flex-direction: column;
     }
-
-@media only screen and (max-width: 600px) { */
-
-
-/* test */
+    .name:first-child {
+        margin-right: 0px; 
+    }
+}
+ @media only screen and (max-width:715px) {
+    .content {
+        width: 100%;
+     }   
+    .items {
+        margin: 0 -40px;
+    } 
+} 
+@media only screen and (max-width:600px) {
+    .content {
+        width: 100%;
+    }
+    .items {
+        margin: 0 40px;
+    }
+    input[type=submit]: {
+        width: 
+    }
+}
+        
