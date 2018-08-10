@@ -1,9 +1,8 @@
 [report]
-
 omit = 
     */python?.?/*
     */site-packages/nose/*
     */__pycache__/*
-    *.__pyc
+    *.pyc
     */myenv/*
     */home/travis/virtualenv/*
