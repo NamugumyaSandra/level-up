@@ -9,8 +9,6 @@ class Rider(object):
         self.phone_number = phone_number
         self.password = password
 
-    # def __str__(self):
-    #     return self.first_name + ', ' + self.last_name + ', ' + self.email_address  + ', ' + self.phone_number + ', ' + self.password
 
     def full_name(self):
         fullname = self.first_name + ', ' +  self.last_name
@@ -34,35 +32,29 @@ class Rider(object):
         else:
             print('Incorrect number format')
 
-    def validate_password(self):
-        # if re.match('^(?=.*[!@#$%&?^])(?=.*[a-z])(?=.*[A-Z].{8,}$', self.password):
-        #     return self.password
-
-        # else:
-        #     return 'Invalid password'
+    def validate_password(self):    
         x = True
         while x:
-            pwd = input('Enter Password:')
-            if (len(pwd)<8 0r len(pwd)>15):
+            if (len(self.password)>8):
+                return 'Should be more than 8 characters'
+
+            elif not re.search('[a-z-_]', self.password):
                 return 'Invalid Password'
 
-            elif not re.search('[a-z]', pwd):
+            elif not re.search('[A-Z-_]', self.password):    
                 return 'Invalid Password'
 
-            elif not re.search('[A-Z]', pwd):    
+            elif not re.search('[0-9-_]', self.password):
                 return 'Invalid Password'
 
-            elif not re.search('[0-9]', pwd):
+            elif not re.search('[!@#$%^&*_?]?', self.password):
                 return 'Invalid Password'
 
-            elif not re.search('[!@#$%^&*_?', pwd):
-                return 'Invalid Password'
-
-            elif re.search('\s', pwd):
+            elif re.search('\s', self.password):
                 return 'Invalid Password'
 
             else:
-                return 'Congrats,Valid password set'
+                return 'Congrats,Valid password'
                 x = False
                 break
 
